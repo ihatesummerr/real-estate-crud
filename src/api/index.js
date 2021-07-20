@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+const API = axios.create({ baseURL: 'https://real-estate-crud.herokuapp.com' });
 
 export const fetchEstate = (page) => API.get(`/estate?page=${page}`);
 export const fetchEstateBySearch = (search) =>

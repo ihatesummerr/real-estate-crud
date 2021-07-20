@@ -17,7 +17,7 @@ const App = () => {
                     exact
                     component={() => <Redirect to='/estate' />}
                 />
-                <Route path='/estate' exact component={Main} />
+                <Route path='/estate' component={Main} />
             </Switch>
         </Router>
     );
